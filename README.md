@@ -9,3 +9,9 @@ GTTS - I found a script on Github that uses the Google speech engine. The script
 PYTTSX - 
 Pyttsx is a cross-platform speech (Mac OSX, Windows, and Linux) library. You can set voice metadata such as age, gender, id, language and name. Thee speech engine comes with a large amount of voices.
 
+
+
+for speech recognition, you need to use speechrecognition. This great resource offers t efreedom to use sphinx project to convert the audio input into a text. You can also use Google services and to do the same with the help of speech recognition.
+
+Now that you’ve got everything you need, let’s take a look at Jarvis’s Brain which is basically the code written by Mr. Gulati. You can assemble the above-mentioned resources and libraries to create your own AI assistant.
+The code shared below is pretty straightforward and you can get things done after few hours of work and research. Take a look:
