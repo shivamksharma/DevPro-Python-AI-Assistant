@@ -42,7 +42,7 @@ def speak(audio_string):
     audio_file = 'audio' + str(r) + '.mp3'
     tts.save(audio_file)
     playsound.playsound(audio_file) 
-    print(f"kiri: {audio_string}")
+    print(f"devpro: {audio_string}")
     os.remove(audio_file)
     
     
