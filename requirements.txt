@@ -3,3 +3,6 @@ PyAudio
 pyttsx3
 playsound
 PyObjC
+gTTS
+yfinance
+pylint
