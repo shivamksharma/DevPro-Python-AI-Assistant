@@ -92,7 +92,7 @@ def  respond(voice_data):
         speak(f'Here is what I found for {search_term} on youtube')
 
     if there_exists(["price of"]):
-        search_term = voice_data.lower().split(" of ")[-1].strip() #strip removes whitespace after/before a term in string
+        search_term = voice_data.lower().split(" of ")[-1].strip()
         stocks = {
             "apple":"AAPL",
             "microsoft":"MSFT",
@@ -117,6 +117,6 @@ time.sleep(1)
 
 person_obj = person()
 while(1):
-    voice_data = record_audio() # get the voice input
-    respond(voice_data) # respond
+    voice_data = record_audio()
+    respond(voice_data)
         
