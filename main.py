@@ -79,4 +79,44 @@ def  respond(voice_data):
         speak(time)
         
         
+    if there_exists(["search for"]) and 'youtube' not in voice_data:
+        search_term = voice_data.split("for")[-1]
+        url = f"https://google.com/search?q={search_term}"
+        webbrowser.get().open(url)
+        speak(f'Here is what I found for {search_term} on google')
+
+    if there_exists(["youtube"]):
+        search_term = voice_data.split("for")[-1]
+        url = f"https://www.youtube.com/results?search_query={search_term}"
+        webbrowser.get().open(url)
+        speak(f'Here is what I found for {search_term} on youtube')
+
+    if there_exists(["price of"]):
+        search_term = voice_data.lower().split(" of ")[-1].strip() #strip removes whitespace after/before a term in string
+        stocks = {
+            "apple":"AAPL",
+            "microsoft":"MSFT",
+            "facebook":"FB",
+            "tesla":"TSLA",
+            "bitcoin":"BTC-USD"
+        }
+        try:
+            stock = stocks[search_term]
+            stock = yf.Ticker(stock)
+            price = stock.info["regularMarketPrice"]
+
+            speak(f'price of {search_term} is {price} {stock.info["currency"]} {person_obj.name}')
+        except:
+            speak('oops, something went wrong')
+    if there_exists(["exit", "quit", "goodbye"]):
+        speak("going offline")
+        exit()
+
+
+time.sleep(1)
+
+person_obj = person()
+while(1):
+    voice_data = record_audio() # get the voice input
+    respond(voice_data) # respond
         
