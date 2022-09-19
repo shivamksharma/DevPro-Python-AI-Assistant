@@ -16,5 +16,3 @@ Now that you’ve got everything you need, let’s take a look at Devprogramming
 -> playsound – for playing the saved audio file.
 -> pyaudio – for voice engine in python
 
-Thats It - Build Your Own AI Assistant 
-
