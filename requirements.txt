@@ -4,4 +4,4 @@ pyttsx3
 playsound
 gTTS
 yfinance
-pylinit
+python-dotenv==1.0.0
