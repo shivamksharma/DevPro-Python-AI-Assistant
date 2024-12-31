@@ -1,9 +1,7 @@
 speechrecognition
 PyAudio
 pyttsx3
-pywin32
 playsound
 gTTS
 yfinance
 pylinit
-PyObjC

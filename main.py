@@ -1,12 +1,13 @@
-import speech_recognition as speech_recognition
-import plysound
-from gtts import gtts
+#!/usr/bin/python3
+
+import speech_recognition as sr
+from gtts import gTTS
 import random
 from time import ctime
-import webbrowser
-import ssl
-import certifi
 import time
+import webbrowser
+import yfinance as yf
+import playsound
 import os
 
 class person:
