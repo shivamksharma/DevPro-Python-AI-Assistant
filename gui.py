@@ -80,10 +80,10 @@ class DevProGUI:
         """
         Process the command and display the assistant's response.
         """
-        self.respond_function(command, self.person_obj)
+        self.respond_function(command, self.person_obj, self.speak)
 
     def speak(self, audio_string):
         """
         Override the speak function to display the response in the GUI.
         """
-        self.speak_function(audio_string)
+        self.display_message("DevPro", audio_string)
